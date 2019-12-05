@@ -4,23 +4,29 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTeachersTable extends Migration
+class CreateLanguagesTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
-        Schema::create('teachers', function (Blueprint $table) {
+        Schema::create('languages', function (Blueprint $table) {
             $table->bigIncrements('Id');
             $table->string('Name');
-            $table->boolean('Sex');
-            $table->bigInteger('Phone');
-            $table->string('Mail');
-            $table->string('Address');
             $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
-        Schema::dropIfExists('teachers');
+        Schema::dropIfExists('languages');
     }
 }
