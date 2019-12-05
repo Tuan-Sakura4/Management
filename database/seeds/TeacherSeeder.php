@@ -13,7 +13,7 @@ class TeacherSeeder extends Seeder
     {
 
         \App\Teacher::Create(
-            ['Name' => 'A', 'Sex' => '1', 'Phone' => '0123456789', 'Mail' => 'a@gmail.com', 'Address' => 'Hà Nội'],
+            ['Name' => 'A', 'Sex' => '1', 'Phone' => '0123456789', 'Mail' => 'a@gmail.com', 'Image' => '', 'Address' => 'Hà Nội']
         );
 //        $location = array('A', 'B', 'C');
 //        for ($i = 0; $i <= 3; $i++) {
