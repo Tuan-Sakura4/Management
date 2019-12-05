@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('teacher', 'TeacherController@index')->name('get.teacher');
+Route::post('teacher', 'TeacherController@store')->name('post.teacher');
