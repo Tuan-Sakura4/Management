@@ -66,6 +66,9 @@ class Kernel extends HttpKernel
         'course' =>\App\Http\Middleware\CourseMiddleware::class,
         'student' =>\App\Http\Middleware\StudentMiddleware::class,
         'locale' => \App\Http\Middleware\Locale::class,
+        'check.teacher' => \App\Http\Middleware\TeacherMiddleware::class,
+        'check.lesson' => \App\Http\Middleware\LessonMiddleware::class,
+        'check.attendance' => \App\Http\Middleware\AttendanceMiddleware::class,
     ];
 
     /**

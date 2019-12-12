@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Bu extends Model
 {
     protected $table = 'bus';
-    public function students(){
-        return $this->hasMany('App\Bu');
+
+    protected $fillable = ['Name'];
+
+    public function Students()
+    {
+        return $this->hasMany('App\Student', 'Id_Bu', 'id');
     }
 }

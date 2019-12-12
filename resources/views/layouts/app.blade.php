@@ -10,10 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="{{ asset('theme') }}/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="{{ asset('theme') }}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <script src="{{ asset('theme') }}/select/js/jquery.js"></script>
+    <script src="{{ asset('theme') }}/select/dist/js/standalone/selectize.js"></script>
+    <link href="{{ asset('theme') }}/select/dist/css/selectize.css" rel="stylesheet">
+
+    @if(\Request::route()->getName()==('get.chart.dashboard'))
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            var analytics = <?php echo $Point; ?>
+
+            google.charts.load('current', {'packages': ['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable(analytics);
+                var options = {
+                    title: "Test point of course"
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+                chart.draw(data, options);
+            }
+        </script>
+    @endif
 </head>
 <body id="page-top">
 <div id="wrapper">
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
@@ -21,17 +45,12 @@
             <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
         </a>
         <hr class="sidebar-divider my-0">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('get.dashboard')}}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
         <hr class="sidebar-divider">
-        <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
-        </li>
         <li class="nav-item active">
             <a class="nav-link" href="{{route('course.index')}}">
                 <i class="fas fa-fw fa-table"></i>
@@ -46,6 +65,21 @@
             <a class="nav-link" href="{{route('student.index')}}">
                 <i class="fas fa-graduation-cap"></i>
                 <span>{{ __('language.Students') }}</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('get.teacher')}}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Teacher</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('get.lesson')}}">
+                <i class="fas fa-fw fa-address-book"></i>
+                <span>Lesson</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{route('get.attendance')}}">
+                <i class="fas fa-fw fa-pen-square"></i>
+                <span>Attendance</span></a>
         </li>
         <hr class="sidebar-divider d-none d-md-block">
         <div class="text-center d-none d-md-inline">
@@ -89,13 +123,17 @@
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
-
-<script src="{{ asset('theme') }}/vendor/jquery/jquery.min.js"></script>
+{{--<script src="{{ asset('theme') }}/vendor/jquery/jquery.min.js"></script>--}}
 <script src="{{ asset('theme') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="{{ asset('theme') }}/vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="{{ asset('theme') }}/js/sb-admin-2.min.js"></script>
 <script src="{{ asset('theme') }}/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="{{ asset('theme') }}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 <script src="{{ asset('theme') }}/js/demo/datatables-demo.js"></script>
+<script>
+    $('#select-state').selectize({
+        maxItems: 100
+    });
+</script>
 </body>
 </html>

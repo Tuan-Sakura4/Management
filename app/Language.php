@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Language extends Model
 {
     protected $table = 'languages';
-    public function students(){
-        return $this->hasMany('App\Student');
+
+    protected $fillable = ['Name'];
+
+    public function Students()
+    {
+        return $this->hasMany('App\Student', 'Id_Language', 'id');
     }
 }

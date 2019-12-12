@@ -37,8 +37,8 @@ class TestExampleRequest extends FormRequest
             'Point.number'=>'Point under validation must be numeric!',
             'Point.min'=>'Point size must be between 0 and 10!',
             'Point.max'=>'Point size must be between 0 and 10!',
-            'Id_Course.requied'=>'Not be empty!',
-            'Id_Student.requied'=>'Not be empty!'
+            'Id_Course.required'=>'Not be empty!',
+            'Id_Student.required'=>'Not be empty!'
         ];
         return $messages;
     }
