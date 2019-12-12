@@ -18,3 +18,17 @@ Route::get('/', function () {
 
 Route::get('teacher', 'TeacherController@index')->name('get.teacher');
 Route::post('teacher', 'TeacherController@store')->name('post.teacher');
+Route::group(['prefix'=>'language'],function(){
+    Route::get('/','LanguageController@index')->name('language');
+    Route::post('add','LanguageController@store');
+    Route::get('edit/{id}', 'LanguageController@edit');
+    Route::post('edit/{id}', 'LanguageController@update');
+    Route::get('delete/{id}', 'LanguageController@delete');
+});
+Route::group(['prefix'=>'Bus'],function(){
+    Route::get('/','BuController@index');
+    Route::post('add','BuController@store');
+    Route::get('edit/{id}', 'BuController@edit');
+    Route::post('edit/{id}', 'BuController@update');
+    Route::get('delete/{id}', 'BuController@delete');
+});

@@ -14,11 +14,11 @@ class CreateAttendancesTable extends Migration
     public function up()
     {
         Schema::create('attendances', function (Blueprint $table) {
-            $table->bigIncrements('Id');
+            $table->bigIncrements('id');
             $table->bigInteger('Id_Lesson')->unsigned();
-            $table->foreign('Id_Lesson')->references('Id')->on('lessons')->onDelete('cascade');
+            $table->foreign('Id_Lesson')->references('id')->on('lessons')->onDelete('cascade');
             $table->bigInteger('Id_Student')->unsigned();
-            $table->foreign('Id_Student')->references('Id')->on('courses')->onDelete('cascade');
+            $table->foreign('Id_Student')->references('id')->on('students')->onDelete('cascade');
             $table->timestamps();
         });
     }

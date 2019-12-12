@@ -1,0 +1,99 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Http\Requests\BuExampleRequest;
+use App\Bus;
+use Illuminate\Http\Request;
+
+class BuController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $Bus= Bus::all();
+        return view('Bus.ViewBus', compact('Bus'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(BuExampleRequest $request)
+    {
+        $Bus = new Bus;
+        $Bus->Name  = $request ->Name;
+        // dd($language->Name);
+        $Bus ->save();
+        return redirect('Bus')->with('success', 'Bạn đã thêm Bu thành công');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Bus  $bus
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Bus $bus)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Bus  $bus
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Bus $bus,$id)
+    {
+        $Bus=Bus::find($id);
+        return view('Bus.Edit',compact('Bus'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Bus  $bus
+     * @return \Illuminate\Http\Response
+     */
+    public function update(BuExampleRequest $request,$id)
+    {
+        $Bus=Bus::find($id);
+        $Bus->Name=$request->Name;
+        $Bus->save();
+        return redirect('Bus')->with('success', 'Bạn đã sửa dịch vụ thành công');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Bus  $bus
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Bus $bus)
+    {
+        //
+    }
+    public function delete($id){
+        $Bu = Bus::find($id);
+        $Bu->delete();
+        return redirect()->back()->with('success', 'Successfully delete');
+    }
+}

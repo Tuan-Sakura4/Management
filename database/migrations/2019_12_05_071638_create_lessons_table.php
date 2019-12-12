@@ -14,12 +14,12 @@ class CreateLessonsTable extends Migration
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
-            $table->bigIncrements('Id');
+            $table->bigIncrements('id');
             $table->dateTime('Date');
             $table->bigInteger('Id_Teacher')->unsigned();
-            $table->foreign('Id_Teacher')->references('Id')->on('teachers')->onDelete('cascade');
+            $table->foreign('Id_Teacher')->references('id')->on('teachers')->onDelete('cascade');
             $table->bigInteger('Id_Course')->unsigned();
-            $table->foreign('Id_Course')->references('Id')->on('courses')->onDelete('cascade');
+            $table->foreign('Id_Course')->references('id')->on('courses')->onDelete('cascade');
             $table->timestamps();
         });
     }

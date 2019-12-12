@@ -14,7 +14,7 @@ class CreateStudentsTable extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->bigIncrements('Id');
+            $table->bigIncrements('id');
             $table->string('Name');
             $table->boolean('Sex');
             $table->string('Email');
@@ -22,9 +22,9 @@ class CreateStudentsTable extends Migration
             $table->string('Address');
             $table->datetime('Birth');
             $table->bigInteger('Id_Language')->unsigned();
-            $table->foreign('Id_Language')->references('Id')->on('languages')->onDelete('cascade');
+            $table->foreign('Id_Language')->references('id')->on('languages')->onDelete('cascade');
             $table->bigInteger('Id_Bu')->unsigned();
-            $table->foreign('Id_Bu')->references('Id')->on('bus')->onDelete('cascade');
+            $table->foreign('Id_Bu')->references('id')->on('bus')->onDelete('cascade');
             $table->timestamps();
         });
     }
