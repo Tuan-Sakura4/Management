@@ -20,7 +20,11 @@ class CreateTestsTable extends Migration
             $table->bigInteger('Id_Course')->unsigned();
             $table->foreign('Id_Course')->references('id')->on('courses')->onDelete('cascade');
             $table->bigInteger('Id_Student')->unsigned();
+<<<<<<< HEAD
             $table->foreign('Id_Student')->references('id')->on('students')->onDelete('cascade');
+=======
+            $table->foreign('Id_Student')->references('id')->on('Students')->onDelete('cascade');
+>>>>>>> 6875fc4654c3199aecfcec67d05d5b70e543e601
             $table->timestamps();
         });
     }

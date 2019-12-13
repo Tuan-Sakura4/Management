@@ -18,6 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string('Name');
             $table->boolean('Sex');
             $table->string('Email');
+            $table->string('Image')->nullable();
             $table->bigInteger('Phone');
             $table->string('Address');
             $table->datetime('Birth');

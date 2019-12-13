@@ -18,7 +18,11 @@ class CreateAttendancesTable extends Migration
             $table->bigInteger('Id_Lesson')->unsigned();
             $table->foreign('Id_Lesson')->references('id')->on('lessons')->onDelete('cascade');
             $table->bigInteger('Id_Student')->unsigned();
+<<<<<<< HEAD
             $table->foreign('Id_Student')->references('id')->on('students')->onDelete('cascade');
+=======
+            $table->foreign('Id_Student')->references('id')->on('courses')->onDelete('cascade');
+>>>>>>> 6875fc4654c3199aecfcec67d05d5b70e543e601
             $table->timestamps();
         });
     }
