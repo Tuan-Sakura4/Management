@@ -1,65 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3b6a86b-5510-4cb4-9084-dcb0119a499d" name="Default Changelist" comment="table:Students-Tests-Courses">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Attendance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AttendanceMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/LessonMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AttendanceRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/LessonRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AttendanceSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/LessonSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/css/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/css/selectize.bootstrap2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/css/selectize.bootstrap3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/css/selectize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/css/selectize.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/css/selectize.legacy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/js/selectize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/js/selectize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/js/standalone/selectize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/js/standalone/selectize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/plugins/drag_drop.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/plugins/dropdown_header.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/plugins/optgroup_columns.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/plugins/remove_button.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/selectize.bootstrap2.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/selectize.bootstrap3.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/selectize.default.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/selectize.legacy.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/dist/less/selectize.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/js/es5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/theme/select/js/jqueryui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/2019/12/09/2019-12-09__b.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/2019/12/09/2019-12-09__bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/chart.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/lesson/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/lesson/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/teacher/edit.blade.php" afterDir="false" />
+    <list default="true" id="c3b6a86b-5510-4cb4-9084-dcb0119a499d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test3.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Bu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TestExampleRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TestExampleRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Language.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Language.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Teacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/theme/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/theme/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teacher/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +17,13 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -215,6 +159,28 @@
       <updated>1575511393389</updated>
       <workItem from="1575511394762" duration="1124000" />
     </task>
+    <task id="LOCAL-00001" summary="add test.docx">
+      <created>1579586957453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579586957453</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add1 test.docx">
+      <created>1579587007849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579587007849</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add2 test.docx">
+      <created>1579587034819</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579587034819</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,13 +201,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="table:Students-Tests-Courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="table:Students-Tests-Courses" />
+    <MESSAGE value="add test.docx" />
+    <MESSAGE value="add1 test.docx" />
+    <MESSAGE value="add2 test.docx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add2 test.docx" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1576136562356">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="433" y="0" key="CommitChangelistDialog2" timestamp="1579587514406">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1576136562356" />
+    <state x="433" y="0" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1579587514406" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1576138901126">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -258,6 +228,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1576137868480" />
+    <state x="552" y="247" key="Vcs.Push.Dialog.v2" timestamp="1579587510656">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="247" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1579587510656" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576136894354">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
